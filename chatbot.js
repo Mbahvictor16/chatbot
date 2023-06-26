@@ -23,8 +23,9 @@ form.onsubmit = (e) => {
 
   const BotReply = new VicBot(textPrompt).getReply();
   botText.innerHTML = BotReply;
-  chatContainer.append(botText);
-
+  setTimeout(() => {
+    chatContainer.append(botText);
+  }, 1000);
   localStorage.setItem("chat", JSON.stringify(chatContainer.innerHTML));
 
   form.reset();
