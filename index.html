@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./chatbot.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="chat-container" class="empty"></div>
+
+      <form method="post">
+        <div>
+          <textarea
+            name="prompt"
+            id="prompt"
+            cols="30"
+            rows="2"
+            placeholder="Chat with VicBot..."
+          ></textarea>
+          <button type="submit">Send</button>
+        </div>
+
+        <div>
+          <span role="button">Clear chat</span>
+        </div>
+      </form>
+    </div>
+
+    <script src="./chatbot.js" type="module"></script>
+  </body>
+</html>
