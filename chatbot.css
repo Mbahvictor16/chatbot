@@ -19,19 +19,20 @@ body {
 }
 
 #chat-container {
-  padding: 10px 20px;
-  height: calc(100% - 100px);
+  padding: 25px 20px;
+  height: calc(100% - 150px);
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 750px;
   margin: auto;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .user {
   align-self: flex-end;
   background: limegreen;
-  padding: 5px 2ch;
+  padding: 5px 1ch;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -40,7 +41,7 @@ body {
 .bot {
   align-self: flex-start;
   background: white;
-  padding: 5px 2ch;
+  padding: 5px 1ch;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
@@ -48,10 +49,10 @@ body {
 
 .bot,
 .user {
-  display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 70%;
+  word-break: break-word;
+  max-width: 90%;
   margin-bottom: 10px;
 }
 

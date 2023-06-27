@@ -25,8 +25,8 @@ form.onsubmit = (e) => {
   botText.innerHTML = BotReply;
   setTimeout(() => {
     chatContainer.append(botText);
+    localStorage.setItem("chat", JSON.stringify(chatContainer.innerHTML));
   }, 1000);
-  localStorage.setItem("chat", JSON.stringify(chatContainer.innerHTML));
 
   form.reset();
 
