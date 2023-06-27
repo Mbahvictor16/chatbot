@@ -47,15 +47,3 @@ function Chats() {
     chatContainer.innerHTML = `<div id="empty">Your chat with VicBot will appear here...</div>`;
   }
 }
-
-// function generateText(text, botText) {
-//   let index = 0;
-//   let Interval = setInterval(() => {
-//     if (index < text.length) {
-//       botText.innerHTML += text.charAt(index);
-//       index++;
-//     } else {
-//       clearInterval(Interval);
-//     }
-//   }, 100);
-// }
